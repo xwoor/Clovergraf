@@ -10,6 +10,7 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CotizacionesComponent } from './pages/cotizaciones/cotizaciones.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CotizacionesComponent } from './pages/cotizaciones/cotizaciones.compone
     CotizacionesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
