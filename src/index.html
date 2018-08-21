@@ -3,12 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>Clovergraf</title>
-  <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Bootstrap Core CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="assets/css/style.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Owl Carousel Assets -->
+<link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+<!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
+<!-- jQuery and Modernizr-->
+<script src="assets/js/jquery-2.1.1.js"></script>
+
 </head>
-<body>
+<body >
   <app-root></app-root>
+
+
+
+	<!-- JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		$(function() {
+			$('#menu-wrapper').height($("#menu").height());
+
+			$('#menu').affix({
+				offset: { top: $('#menu').offset().top }
+			});
+		});
+	</script>
+
 </body>
 </html>
