@@ -1,0 +1,32 @@
+{
+    "titulo":"Clovergraf",
+    "descripcion":"Es una compañia que brinda servicios de diseño",
+    "direccion": "Calle # 12 -3 Bogotá Colombia",
+    "email":"marioosorio714@gmail.com",
+    "telefono":"123 456",
+
+  "redes": {
+        "facebook":"link_facebook",
+        "instagram":"link_instagram",
+        "twitter": "link_twitter"
+    },
+
+    "persona1":{
+         "nombre":"Jhonatan",
+         "cargo":"Diseñador",
+         "perfil":"es una persona emprendedora...." 
+    },
+    "persona2":{ 
+        "nombre":"Juan Pablo", 
+        "cargo":"Diseñador",
+        "perfil":"es una persona emprendedora...."
+      },
+    "persona3":{ 
+        "nombre":"Mario",
+        "cargo":"Desarrollado web",
+        "perfil":"es una persona emprendedora...."  
+    },
+
+    "servicios":{}
+   
+}

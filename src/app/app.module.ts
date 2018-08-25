@@ -12,6 +12,7 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CotizacionesComponent } from './pages/cotizaciones/cotizaciones.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './/app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

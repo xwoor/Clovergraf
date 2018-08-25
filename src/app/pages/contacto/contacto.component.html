@@ -1,16 +1,14 @@
 <section class="box-content">
   <div class="container">
-    <div class="row heading">
+    <div class="row heading ">
     </div>
-    <div class="row">
+    <div class="row animated fadeIn">
       <div class="col-md-4 box-item">
-        <h3>Información</h3>
-        <span>Informacion de la compañia</span><br> <br>
-        <p>JL.Kemacetan timur no.23. block.Q3<br>
-          Jakarta-Indonesia</p>
-           <p>teléfono 1 <br>
-          teléfono 2</p>
-        <p>email@clovergraf.com</p>
+        <h3>{{_servicio.info.titulo}}</h3>
+        <span>{{_servicio.info.descripcion}}</span><br> <br>
+        <p>{{_servicio.info.direccion}}</p>
+        <p>{{_servicio.info.telefono}}</p>
+        <p>{{_servicio.info.email}}</p>
       </div>
       <div class="col-md-8">
         <h3>Contactenos</h3>
@@ -47,7 +45,7 @@
             </div>
           </div>
         </form>
-<h1>{{currentEmail}}</h1>
+<p>{{currentEmail}}</p>
       </div>
     </div>
   </div>

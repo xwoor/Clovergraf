@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Email } from '../email.model';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'contacto',
@@ -7,9 +8,9 @@ import { Email } from '../email.model';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
+  
   model = new Email('','','','');
-  constructor() { }
-
+  constructor(public _servicio :InfoPaginaService) { }
   ngOnInit() {
   }
   get currentEmail(){
