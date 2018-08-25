@@ -7,17 +7,31 @@ import { HttpClient } from '@angular/common/http';
 export class InfoPaginaService {
   info: any = {};
   cargarda: boolean = false;
-
+  port: any = {};
 
   constructor(private http: HttpClient) { 
-
-    console.log("Mensaje en la consola");
+    this.cargarInfo();
+    this.cargarPortafolio();
+  }
+  private cargarInfo(){
+    
     //Leer archivos JSON
     this.http.get('assets/data/data-pagina.json')
     .subscribe(resp => {
       this.cargarda = true;
       this.info = resp;
+      //console.log(resp);
+    });
+     
+  }
+  private cargarPortafolio(){
+      
+    //Leer archivos JSON
+    this.http.get('https://clovergraf-49707.firebaseio.com/portafolio.json')
+    .subscribe(resp => {
+      this.port = resp; 
       console.log(resp);
     });
+  
   }
 }
