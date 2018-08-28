@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InfoPaginaService } from '../../services/info-pagina.service';
-
+import { PortafolioService } from '../../services/portafolio.service'
 @Component({
   selector: 'app-portafolio',
   templateUrl: './portafolio.component.html',
@@ -8,7 +7,7 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 })
 export class PortafolioComponent implements OnInit {
 
-  constructor(public _port :InfoPaginaService) { }
+  constructor(public _portafolio :PortafolioService ) { }
 
   ngOnInit() {
   }

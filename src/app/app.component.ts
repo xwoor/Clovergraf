@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
+import { PortafolioService } from './services/portafolio.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import { InfoPaginaService } from './services/info-pagina.service';
 })
 export class AppComponent {
   title = 'Clovergraf';
-  constructor(public _InfoPaginaService:InfoPaginaService ){
+  constructor(public _InfoPaginaService:InfoPaginaService,
+              public _portafolio :PortafolioService ){
 
   }
 }

@@ -8,14 +8,16 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CotizacionesComponent } from './pages/cotizaciones/cotizaciones.component';
+import {ItemComponent } from '../app/pages/item/item.component';
 
-const routes: Routes = [
+ const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'portafolio', component: PortafolioComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'item/id:', component: ItemComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

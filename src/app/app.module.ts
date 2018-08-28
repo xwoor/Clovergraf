@@ -13,6 +13,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CotizacionesComponent } from './pages/cotizaciones/cotizaciones.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ItemComponent } from './pages/item/item.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     PortafolioComponent,
     NosotrosComponent,
     ContactoComponent,
-    CotizacionesComponent
+    CotizacionesComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
