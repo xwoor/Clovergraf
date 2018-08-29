@@ -23,6 +23,10 @@ export class PortafolioService {
         this.info = resp;
       });
       
-      
    }
+    getPortafolio( id: string){
+    // Vamos a leer el Json
+    // con esto podemos usar los datos de JSON
+    return this.http.get(`https://clovergraf-49707.firebaseio.com/portafolio/${id}.json`);
+    };   
 }

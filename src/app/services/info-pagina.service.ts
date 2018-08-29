@@ -30,7 +30,7 @@ export class InfoPaginaService {
     this.http.get('https://clovergraf-49707.firebaseio.com/portafolio.json')
     .subscribe(resp => {
       this.port = resp; 
-      console.log(resp);
+      
     });
   
   }

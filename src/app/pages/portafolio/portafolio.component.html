@@ -39,7 +39,7 @@
             <div class="text-wrap">
 						<p>{{portafolio.des_corta}}</p>
 								<div class="book-now-c">
-									<a routerLink="/item">Ver más</a>
+									<a [routerLink]="['/item' , portafolio.id]">Ver más</a>
 								</div>
 							</div>
 

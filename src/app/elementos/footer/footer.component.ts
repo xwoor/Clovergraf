@@ -6,9 +6,12 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
+
 export class FooterComponent implements OnInit {
-  
-  constructor(public _servicio :InfoPaginaService) { }
+
+  constructor(public _servicio :InfoPaginaService) { 
+    
+  }
   ngOnInit() {
   }
 

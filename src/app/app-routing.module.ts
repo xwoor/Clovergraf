@@ -17,7 +17,7 @@ import {ItemComponent } from '../app/pages/item/item.component';
   { path: 'portafolio', component: PortafolioComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'item/id:', component: ItemComponent },
+  { path: 'item/:id', component: ItemComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
