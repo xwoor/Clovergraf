@@ -1,93 +1,28 @@
 <div class="row">
 <img class="banner animated fadeIn col-md-12" src="http://clovergraf.com/elementos/assets/img/banner_servicios.png" alt="">
-<h5 class="text-center animated jello">¡Diversas posibilidades para llevar tus proyectos a otro nivel!</h5>
+<h5 class="text-center">¡Diversas posibilidades para llevar tus proyectos a otro nivel!</h5>
 
  <!-- Grid -->
 <hr>
-<div class="container bg animated bounceIn">
+<div class="container bg animated bounceIn" *ngIf="!_servicios.cargarda" >
 
 <!-- Elemento -->
-    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
+    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper"  *ngFor="let servicios of _servicios.info"  > 
      <div class="rlisting">
-        <div class="col-md-12 nopad">
-          <img src="http://dummyimage.com/250x250" class="img-responsive">
+        <div class="col-md-12 nopad text-center">
+          <img [src]="servicios.link_img" class="img-responsive centrado">
         </div>
         <div class="col-md-12 nopad text-center">
-          <h6>Diseño de imagen</h6>
-           <p>Es un conjunto de experienciencias, sensaciones y servicios que se desean ofrecer.</p>
+           <p>{{ servicios.des_corta }}</p>
            <div class="rfooter">
-              <button type="button" class="btn btn-primary boton btn-lg" name="button"><a href="#">Ver más</a></button>
-           </div>
+              <button type="button" class="btn btn-primary boton btn-lg" name="button">
+                  <a [routerLink]="['/servicio' , servicios.id]">Ver más</a>
+              </button>
+           </div><br>
         </div>
       </div>
     </div>
 <!-- Fin Elemento -->
-<!-- Elemento -->
-    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
-     <div class="rlisting">
-        <div class="col-md-12 nopad">
-          <img src="http://dummyimage.com/250x250" class="img-responsive">
-        </div>
-        <div class="col-md-12 nopad text-center">
-          <h6>Diseño de empaque</h6>
-           <p>Es un conjunto de experienciencias, sensaciones y servicios que se desean ofrecer.</p>
-           <div class="rfooter">
-              <button type="button" class="btn btn-primary boton btn-lg" name="button"><a href="#">Ver más</a></button>
-           </div>
-        </div>
-      </div>
-    </div>
-<!-- Fin Elemento -->
-<!-- Elemento -->
-    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
-     <div class="rlisting">
-        <div class="col-md-12 nopad">
-          <img src="http://dummyimage.com/250x250" class="img-responsive">
-        </div>
-        <div class="col-md-12 nopad text-center">
-          <h6>Diseño de empaque</h6>
-           <p>Es un conjunto de experienciencias, sensaciones y servicios que se desean ofrecer.</p>
-           <div class="rfooter">
-              <button type="button" class="btn btn-primary boton btn-lg" name="button"><a href="#">Ver más</a></button>
-           </div>
-        </div>
-      </div>
-    </div>
-<!-- Fin Elemento -->
-<!-- Elemento -->
-    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
-     <div class="rlisting">
-        <div class="col-md-12 nopad">
-          <img src="http://dummyimage.com/250x250" class="img-responsive">
-        </div>
-        <div class="col-md-12 nopad text-center">
-          <h6>Diseño de empaque</h6>
-           <p>Es un conjunto de experienciencias, sensaciones y servicios que se desean ofrecer.</p>
-           <div class="rfooter">
-              <button type="button" class="btn btn-primary boton btn-lg" name="button"><a href="#">Ver más</a></button>
-           </div>
-        </div>
-      </div>
-    </div>
-<!-- Fin Elemento -->
-<!-- Elemento -->
-    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
-     <div class="rlisting">
-<hr>
-        <div class="col-md-12 nopad">
-          <img src="http://dummyimage.com/250x250" class="img-responsive">
-        </div>
-        <div class="col-md-12 nopad text-center">
-          <h6>Diseño de empaque</h6>
-           <p>Es un conjunto de experienciencias, sensaciones y servicios que se desean ofrecer.</p>
-           <div class="rfooter">
-              <button type="button" class="btn btn-primary boton btn-lg" name="button"><a href="#">Ver más</a></button>
-           </div>
-        </div>
-      </div>
-    </div>
-<!-- Fin Elemento -->
-
  </div>
 <hr>
 

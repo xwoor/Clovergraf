@@ -1,11 +1,10 @@
-<footer class="main-footer animated fadeIn" *ngIf="_servicio">
+<footer class="main-footer animated fadeIn" *ngIf=" _servicio.info.redes">
   <div class="wrap-footer">
     <div class="container">
       <ul class="list-inline top-link link">
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">twitter</a></li>
-
+        <li><a target="_blank" [href]="_servicio.info.redes.facebook">facebook</a></li>
+        <li><a target="_blank" [href]="_servicio.info.redes.instagram">instagram</a></li>
+        <li><a target="_blank" [href]="_servicio.info.redes.youtube">youtube</a></li>
       </ul>
       <div class="copyright">
         <p>Clover graf somos todo lo que te imaginas diseño gráfico y publicidad. Todos los derechos reservados. Diseñado y diagramado por Clover Graf</p>

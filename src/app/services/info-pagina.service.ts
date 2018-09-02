@@ -16,7 +16,7 @@ export class InfoPaginaService {
   private cargarInfo(){
     
     //Leer archivos JSON
-    this.http.get('assets/data/data-pagina.json')
+    this.http.get('https://clovergraf-49707.firebaseio.com/Informacion.json')
     .subscribe(resp => {
       this.cargarda = true;
       this.info = resp;

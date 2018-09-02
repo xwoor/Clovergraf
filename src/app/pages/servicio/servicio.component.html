@@ -1,4 +1,4 @@
-<div class="loader loader--style1 centrado" title="0" *ngIf="_servicioPortafolio.cargarda">
+<div class="loader loader--style1 centrado" title="0" *ngIf="_servicioServicio.cargarda">
     <h3>Cargando</h3>
       <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
@@ -19,27 +19,27 @@
       <p>espere por favor</p>
     </div>
 
-<div *ngIf="!_servicioPortafolio.cargarda">
+<div *ngIf="!_servicioServicio.cargarda">
 <div class="jumbotron" *ngIf="producto">
     <div class="container text-center">
-      <h1>{{producto.cliente}}</h1>      
-      <p>{{producto.des_corta}}</p>
+      <h1>{{producto.servicio}}</h1>      
+      <p>{{producto.descripcion}}</p>
     </div>
   </div>
     
   <div class="container-fluid bg-3 text-center" *ngIf="producto">    
-    <h3>Trabajo realizado</h3><br>
+    <h3>Servicio</h3><br>
     <p>{{producto.descripcion}}</p><br>
     <div class="row">
       <div class="col-sm-4">
   
-        <img [src]="producto.imagen" class="img-responsive" style="width:100%" alt="Image">
+        <img [src]="producto.link_img" class="img-responsive" style="width:100%" alt="Image">
       </div>
       <div class="col-sm-4"> 
-        <img [src]="producto.imagen" class="img-responsive" style="width:100%" alt="Image">
+        <img [src]="producto.link_img" class="img-responsive" style="width:100%" alt="Image">
       </div>
       <div class="col-sm-4"> 
-        <img [src]="producto.imagen" class="img-responsive" style="width:100%" alt="Image">
+        <img [src]="producto.link_img" class="img-responsive" style="width:100%" alt="Image">
       </div>
   </div>
   </div>
