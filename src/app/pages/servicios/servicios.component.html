@@ -1,5 +1,7 @@
 <div class="row">
-<img class="banner animated fadeIn col-md-12" src="http://clovergraf.com/elementos/assets/img/banner_servicios.png" alt="">
+<img class="banner animated fadeIn col-md-12"
+src="http://clovergraf.com/elementos/assets/img/banner_servicios.png" alt="">
+<br><br>
 <h5 class="text-center">¡Diversas posibilidades para llevar tus proyectos a otro nivel!</h5>
 
  <!-- Grid -->
@@ -15,7 +17,7 @@
         <div class="col-md-12 nopad text-center">
            <p>{{ servicios.des_corta }}</p>
            <div class="rfooter">
-              <button type="button" class="btn btn-primary boton btn-lg" name="button">
+              <button type="button" [routerLink]="['/servicio' , servicios.id]" class="btn btn-primary boton btn-lg" name="button">
                   <a [routerLink]="['/servicio' , servicios.id]">Ver más</a>
               </button>
            </div><br>

@@ -17,31 +17,32 @@
         </path>
       </svg>
       <p>espere por favor</p>
-    </div>
+</div>
 
 <div *ngIf="!_servicioServicio.cargarda">
-<div class="jumbotron" *ngIf="producto">
+<div class="jumbotron" *ngIf="producto" [ngStyle]="{'color': 'black'}">
     <div class="container text-center">
-      <h1>{{producto.servicio}}</h1>      
+      <h1 >{{producto.servicio}}</h1>      
       <p>{{producto.descripcion}}</p>
     </div>
   </div>
     
   <div class="container-fluid bg-3 text-center" *ngIf="producto">    
     <h3>Servicio</h3><br>
-    <p>{{producto.descripcion}}</p><br>
-    <div class="row">
+    <p>{{producto.descripcion}}</p>
+    <br>
+      <div class="row">
       <div class="col-sm-4">
   
-        <img [src]="producto.link_img" class="img-responsive" style="width:100%" alt="Image">
+        <img [src]="producto.link_img" class="img-responsive col-sm-4" style="width:100%" alt="Image">
       </div>
       <div class="col-sm-4"> 
-        <img [src]="producto.link_img" class="img-responsive" style="width:100%" alt="Image">
+        <img [src]="producto.link_img" class="img-responsive col-sm-4" style="width:100%" alt="Image">
       </div>
       <div class="col-sm-4"> 
-        <img [src]="producto.link_img" class="img-responsive" style="width:100%" alt="Image">
+        <img [src]="producto.link_img" class="img-responsive col-sm-4" style="width:100%" alt="Image">
       </div>
-  </div>
+      </div>
   </div>
 </div>
   <br>
