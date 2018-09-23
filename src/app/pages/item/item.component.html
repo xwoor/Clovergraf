@@ -19,29 +19,28 @@
       <p>espere por favor</p>
     </div>
 
-<div *ngIf="!_servicioPortafolio.cargarda">
-<div class="jumbotron" *ngIf="producto">
-    <div class="container text-center">
-      <h1>{{producto.cliente}}</h1>      
-      <p>{{producto.des_corta}}</p>
-    </div>
-  </div>
     
-  <div class="container-fluid bg-3 text-center" *ngIf="producto">    
-    <h3>Trabajo realizado</h3><br>
-    <p>{{producto.descripcion}}</p><br>
-    <div class="row">
-      <div class="col-sm-4">
-  
-        <img [src]="producto.imagen" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4"> 
-        <img [src]="producto.imagen" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4"> 
-        <img [src]="producto.imagen" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-  </div>
-  </div>
-</div>
-  <br>
+    <div class="container" *ngIf="!_servicioPortafolio.cargarda">
+        <div class="row"  *ngIf="producto">
+            <h1 class="text-center" >{{ producto.cliente }}</h1><br>
+          <div class="col-md-4 ">
+              <h4 >{{producto.des_corta}}</h4>
+              <br>
+              <img [src]="producto.imagen" />
+              <br>
+              <p>{{producto.descripcion}}</p>
+          </div>
+          <div class="col-md-8">
+          <div class="col-sm-4">
+            <img [src]="producto.imagen_galeria" class="img-responsive col-sm-4" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-4"> 
+            <img [src]="producto.imagen_galeria" class="img-responsive col-sm-4" style="width:100%" alt="Image">
+          </div>
+          <div class="col-sm-4"> 
+            <img [src]="producto.imagen_galeria" class="img-responsive col-sm-4" style="width:100%" alt="Image">
+          </div>
+          </div>
+    
+          </div>
+        </div>

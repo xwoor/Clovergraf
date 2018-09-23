@@ -12,7 +12,7 @@ import {ItemComponent } from '../app/pages/item/item.component';
 import { ServicioComponent } from './pages/servicio/servicio.component';
 
  const routes: Routes = [
-  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'portafolio', component: PortafolioComponent },
@@ -20,7 +20,7 @@ import { ServicioComponent } from './pages/servicio/servicio.component';
   { path: 'contacto', component: ContactoComponent },
   { path: 'item/:id', component: ItemComponent },
   { path: 'servicio/:id', component: ServicioComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
+  { path: '**', pathMatch: 'full', redirectTo: '/inicio' }
 ];
 
 @NgModule({

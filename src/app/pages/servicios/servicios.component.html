@@ -1,32 +1,25 @@
-<div class="row">
-<img class="banner animated fadeIn col-md-12"
-src="http://clovergraf.com/elementos/assets/img/banner_servicios.png" alt="">
-<br><br>
-<h5 class="text-center">¡Diversas posibilidades para llevar tus proyectos a otro nivel!</h5>
-
- <!-- Grid -->
-<hr>
-<div class="container bg animated bounceIn" *ngIf="!_servicios.cargarda" >
-
-<!-- Elemento -->
-    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper"  *ngFor="let servicios of _servicios.info"  > 
-     <div class="rlisting">
-        <div class="col-md-12 nopad text-center">
-          <img [src]="servicios.link_img" class="img-responsive centrado">
-        </div>
-        <div class="col-md-12 nopad text-center">
-           <p>{{ servicios.des_corta }}</p>
-           <div class="rfooter">
-              <button type="button" [routerLink]="['/servicio' , servicios.id]" class="btn btn-primary boton btn-lg" name="button">
-                  <a [routerLink]="['/servicio' , servicios.id]">Ver más</a>
-              </button>
-           </div><br>
-        </div>
-      </div>
-    </div>
-<!-- Fin Elemento -->
- </div>
-<hr>
-
- <!-- Fin Grid -->
-</div>
+<!-- ----------------------------------------------------
+	Servicios Incicio
+----------------------------------------------------- -->  
+    <h1 class="text-center">Nuestros Servicios</h1><br>
+	<div class="container"  *ngIf="!_servicios.cargarda">
+		 <div class="row">
+	            <div class="col-md-4" *ngFor="let servicios of _servicios.info">
+                  <div class="card-content">
+                      <div class="card-img">
+                          <img [src]="servicios.link_img" alt="">
+                      </div>
+                      <div class="card-desc">
+                          <h3>{{ servicios.servicio}}</h3>
+                          <p>{{ servicios.des_corta }}</p>
+                          <button type="button" [routerLink]="['/servicio' , servicios.id]" class="btn btn-primary boton btn-lg" name="button">
+                            <a [routerLink]="['/servicio' , servicios.id]">Ver más</a>  
+                          </button>
+                      </div>
+                  </div><br>
+	            </div>
+	     	</div>
+	</div><br>
+<!-- ----------------------------------------------------
+	Servicios Fin
+----------------------------------------------------- -->
