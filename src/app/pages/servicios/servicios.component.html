@@ -1,19 +1,18 @@
 <!-- ----------------------------------------------------
 	Servicios Incicio
 ----------------------------------------------------- -->  
-    <h1 class="text-center">Nuestros Servicios</h1><br>
+    <h1 class="text-center">Nuestros Servicios</h1>
+    <hr>
 	<div class="container"  *ngIf="!_servicios.cargarda">
 		 <div class="row">
 	            <div class="col-md-4" *ngFor="let servicios of _servicios.info">
                   <div class="card-content">
                       <div class="card-img">
-                          <img [src]="servicios.link_img" alt="">
+                          <img [src]="servicios.img_1" alt="">
                       </div>
                       <div class="card-desc">
-                          <h3>{{ servicios.servicio}}</h3>
-                          <p>{{ servicios.des_corta }}</p>
-                          <button type="button" [routerLink]="['/servicio' , servicios.id]" class="btn btn-primary boton btn-lg" name="button">
-                            <a [routerLink]="['/servicio' , servicios.id]">Ver más</a>  
+                          <button type="button" [routerLink]="['/servicio' , servicios.id]" class="btn btn-primary btn-lg boton2" name="button">
+                            <a class="boton3" [routerLink]="['/servicio' , servicios.id]">Ver más</a>  
                           </button>
                       </div>
                   </div><br>

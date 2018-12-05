@@ -22,27 +22,29 @@
 <div class="container" *ngIf="!_servicioServicio.cargarda">
     <div class="row"  *ngIf="producto">
         <h1 class="text-center" >{{producto.servicio}}</h1><br>
-      <div class="col-md-4 ">
-          <h1 >{{producto.servicio}}</h1>
-          <br>
-          <img [src]="producto.link_img" />
-          <br>
-          <p>{{producto.descripcion}}</p>
+      <div  class="col-md-4 bordelf">
+          <img [src]="producto.img_1" />
+          <hr>
+          <p>{{producto.des_corta}}</p>
+         
       </div>
       <div class="col-md-8">
+          <p>{{producto.descripcion}}</p>
       <div class="col-sm-4">
-        <img [src]="producto.link_img" class="img-responsive col-sm-4" style="width:100%" alt="Image">
+        
+        <img [src]="producto.img_1" class="img-responsive col-sm-4" style="width:100%" alt="Image">
       </div>
       <div class="col-sm-4"> 
-        <img [src]="producto.link_img" class="img-responsive col-sm-4" style="width:100%" alt="Image">
+        <img [src]="producto.img_1" class="img-responsive col-sm-4" style="width:100%" alt="Image">
       </div>
       <div class="col-sm-4"> 
-        <img [src]="producto.link_img" class="img-responsive col-sm-4" style="width:100%" alt="Image">
+        <img [src]="producto.img_1" class="img-responsive col-sm-4" style="width:100%" alt="Image">
       </div>
       </div>
 
       </div>
-    </div>
+</div>
+<br>
       
 
          
